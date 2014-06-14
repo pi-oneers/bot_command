@@ -4,7 +4,7 @@ pibot Package
 :mod:`pibot` Package
 --------------------
 
-.. autoclass:: pibot.Movement
+.. autoclass:: pibot.Motors
     :members:
     :member-order: bysource
     :undoc-members:
@@ -25,4 +25,8 @@ pibot Package
     :member-order: bysource
     :undoc-members:
     :show-inheritance:
+
+--------
+
+.. autofunction:: pibot.say
 

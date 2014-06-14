@@ -1,15 +1,15 @@
-class Movement:
-    def goForwards(self, duration=1.0, speed=127):
+class Motors:
+    def goForward(self, duration=1.0, speed=127):
         '''
-        Move forwards. Defaults to moving forward for one second at a speed of 127.
+        Move forwards. Defaults to driving forwards for one second at a speed of 127.
 
         :param float duration: Duration in seconds.
         :param int speed: Relative speed: 0 to 127 
         '''
 
-    def goBackwards(self, duration=1.0, speed=127):
+    def goBackward(self, duration=1.0, speed=127):
         '''
-        Move backwards. Defaults to moving backwards for one second at a speed of 127.
+        Move backwards. Defaults to driving backwards for one second at a speed of 127.
 
         :param float duration: Duration in seconds.
         :param int speed: Relative speed: 0 to 127 
@@ -31,7 +31,7 @@ class Movement:
         :param float duration: Duration in seconds.
         :param int speed: Relative speed: 0 to 127 
         '''
-    def runMotors(self, left, right, duration):
+    def run(self, left, right, duration):
         ''' 
         Run motors separately with custom speed values for a set duration. 
         
@@ -100,3 +100,12 @@ class Lights:
         :param string colour: RGB colour string e.g. "#FF0000" is red 
         :param int speed: Relative speed: 0 to 127, defaults to 127
         '''
+
+def say (text):
+    '''
+    Say the specified text using text-to-speech.
+
+    :param string text: Phrase or word to say.
+    '''
+
+    
